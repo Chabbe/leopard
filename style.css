@@ -1,0 +1,352 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1D1D1B;
+    margin: 0px;
+}
+
+html{ 
+    scroll-behavior: smooth;
+}
+
+span{
+    color: #A4A4A4;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+#menu {
+    height: 120px;
+    top: 0px;
+    position: relative;
+}
+
+.head-logo{
+    transition: 0.5s;
+    height: 120px;
+}
+
+#moving-logo {
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    width: 6%;
+}
+
+.links {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.header-item {
+    margin-right: 20px;
+    font-size: 1.3em;
+    color: #A4A4A4;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.header-item:hover {
+    transition: 0.3s;
+    color: #F5A623;
+}
+
+
+#categories a:hover {
+    transition: 0.3s;
+    color: #F5A623;
+}
+
+.header-item {
+    color: #A4A4A4;
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: 20px;
+    
+}
+
+.header-item:hover {
+    transition: 0.3s;
+    color: #F5A623;
+}
+
+
+#hero-img {
+    height: 400px;
+    background:url('./images/hero_remastered.png');
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+img {
+    height: 100%;
+}
+
+#about {
+    margin-top: 75px;
+    margin-left: 6%;
+    width: 88%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    letter-spacing: 0.5em;
+}
+
+.about-link{
+    color: #F5A623;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.about-link:after {
+    content: '';
+    width: 0px;
+    height: 3px;
+    display: block;
+    background: #F5A623;
+    transition: 0.75s;
+  }
+
+.about-link:hover:after {
+    width: 100%;
+  }
+
+#logo {
+    height: 160px;
+    display: block;
+    margin-bottom: 50px;
+    animation: pulse 1.5s;
+}
+
+#about-text{
+    font-size: 2em;
+}
+
+#main-wrapper {
+    position: relative;
+    height: 100vh;
+}
+
+.fa-mouse-pointer{
+    font-size: 7em;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: #fff;
+}
+
+.fa-angle-double-right, .fa-angle-double-left {
+    font-size: 3em;
+    pointer-events: none;
+    color: #fff;
+}
+
+.fa-angle-double-right{
+    right: 25%;
+}
+.fa-angle-double-left{
+    left: 25%;
+}
+
+.fa-quote-right, .fa-quote-left {
+    font-size: 3em;
+    pointer-events: none;
+    color: #fff;
+}
+
+.fa-quote-left {
+    left: 25%;
+}
+
+.fa-quote-right{
+    right: 25%;
+}
+
+.fa-cat{
+    font-size: 7em;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: #fff;
+}
+
+h2{ 
+    pointer-events: none;
+    font-size: 3em;
+    display: inline-block;
+    letter-spacing: 0.2em;
+    font-weight: 900;
+    line-height: 3em;
+}
+
+.small-box-title{
+    line-height: 3em;
+}
+
+.news-img, .news-box, .news-cover{
+    width: 41%;
+    height: 40%;
+    position: absolute;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.news-box {
+    background-color: #fff;
+    box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.news-cover {
+    transition: 1s;
+    background-color: rgba(245,166,35,0.9);
+    box-shadow: 0px 0px 10px 0px rgba(245,166,35,1);
+    z-index: 3;
+    cursor: pointer;
+    text-align: center;
+}
+
+.cover-fade{
+    transition: 1s;
+    opacity: 0;
+}
+
+.top-left {
+    top: 15%;
+    left: 6%;
+}
+
+.top-right {
+    top: 15%;
+    right: 6%;
+    height: 25%;
+}
+
+.bottom-right {
+    right: 6%;
+    bottom: 15%;
+    height: 40%;
+}
+
+.bottom-left {
+    left: 6%;
+    bottom: 15%;
+    height: 25%;
+}
+
+@keyframes pulse
+{
+  0% {  opacity: 0; }
+  7% {  opacity: 1; }
+  15% {  opacity: 0; }
+  17% {  opacity: 1; }
+  23% {  opacity: 0; }
+  35% {  opacity: 1; }
+  47% {  opacity: 0; }
+  60% {  opacity: 1; }
+  75% {  opacity: 0; }
+  90% {  opacity: 0; }
+  95% {  opacity: 0; }
+  100% {  opacity: 1; }
+}
+
+#kicks1{
+    background: url('./images/fear_of_god_orange_pulse.jpg');
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+#kicks2{
+    background: url('./images/keith_haringxreebok_classic.jpg');
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+#footer{
+    box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.footer-container{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 45%;
+}
+
+.icons {
+    width: auto;
+}
+
+#footer a {
+    margin-right: 20px;
+    font-size: 1.3em;
+    color: #A4A4A4;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 10px;
+    line-height: 1.8em;
+}
+    
+#footer a:hover {
+    transition: 0.3s;
+    color: #F5A623;
+}
+
+#email {
+    font-size: 0.7em;
+}
+
+.fa-facebook-f, .fa-map-pin{
+    margin-right: 18px;
+}
+
+#footer, i {
+    font-size: 1.4em;
+    color: #F5A623;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 1250px) {
+    h2{
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .fa-quote-right, .fa-quote-left {
+        visibility: hidden;
+    }
+    .fa-angle-double-right, .fa-angle-double-left {
+        visibility: hidden;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    .header-item {
+        font-size: 1em;
+    }
+    #footer a { 
+        font-size: 0.8em;
+        line-height: 2.32em;
+    }
+    #footer i {
+        font-size: 0.9em;
+    }
+}
